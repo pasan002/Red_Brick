@@ -1,0 +1,59 @@
+@media print {
+  /* Hide non-printable elements */
+  button {
+    display: none !important;
+  }
+
+  /* Remove backgrounds and shadows */
+  body {
+    background: none !important;
+  }
+
+  .shadow-xl,
+  .shadow-sm,
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  /* Adjust colors for better print quality */
+  * {
+    color: black !important;
+    border-color: #ddd !important;
+  }
+
+  /* Ensure full width content */
+  .max-w-6xl {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Remove gradients */
+  .bg-gradient-to-br,
+  .bg-gradient-to-r {
+    background: none !important;
+  }
+
+  /* Adjust spacing */
+  .p-8 {
+    padding: 1rem !important;
+  }
+
+  /* Force page breaks */
+  .project-section {
+    page-break-inside: avoid;
+  }
+
+  /* Ensure text is visible */
+  .text-transparent {
+    color: black !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+  }
+
+  /* Adjust progress bar */
+  .bg-gradient-to-r.from-red-600.to-red-400 {
+    background: #666 !important;
+  }
+}
